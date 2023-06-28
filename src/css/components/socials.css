@@ -1,0 +1,25 @@
+
+.socials
+{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.socials a
+{
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: var(--transition-hover-animation);
+}
+
+.socials a:hover
+{
+    border-bottom: 1px solid var(--swatch-color-orange);
+}
+
+.socials img
+{
+    height: 30px;
+}

@@ -1,0 +1,98 @@
+
+#contact
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact h1
+{
+    color: var(--swatch-color-orange);
+    font-size: 1.5em;
+
+}
+
+#contact .form
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#contact hr
+{
+    border: 4px solid var(--swatch-color-gray-4);
+    border-radius: 1em;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#contact p
+{
+    font-size: 1.1em;
+}
+
+#contact .options
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1.1em;
+    margin: 2.5em 1em;
+}
+
+#contact .options .option
+{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#contact .options .option img
+{
+    height: 1.8em;
+}
+
+#contact .options .option a
+{
+    border-bottom: 1px solid transparent;
+    color: var(--swatch-color-white);
+    display: inline-block;
+    padding-top: 0.3em;
+    text-decoration: none;
+    transition: var(--transition-hover-animation);
+}
+
+#contact .options .option a:hover
+{
+    border-bottom: 1px solid var(--swatch-color-orange);
+}
+
+@media (min-width: 930px)
+{
+    
+}
+
+@media (max-width: 930px)
+{
+    #contact
+    {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    #contact hr
+    {
+        width: 100%;
+        margin: 2em 0;
+    }
+}
+
+@media (max-width: 795px)
+{
+    #contact
+    {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+}

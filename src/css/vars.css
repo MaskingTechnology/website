@@ -1,0 +1,26 @@
+
+:root
+{
+    --swatch-color-white: #ffffff;
+
+    --swatch-color-gray-1: #f3f3f3;
+    --swatch-color-gray-2: #d9d9d9;
+    --swatch-color-gray-3: #b7b7b7;
+    --swatch-color-gray-4: #434343;
+    --swatch-color-gray-5: #151814;
+
+    --swatch-color-blue: #0b5394;
+    --swatch-color-brown: #b45f06;
+    --swatch-color-green: #38761d;
+    --swatch-color-orange: #e69138;
+
+    --font-family-text: 'Comfortaa', sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    
+    --transition-hover-animation: all .2s ease-in-out;
+}

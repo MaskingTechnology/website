@@ -1,0 +1,22 @@
+{
+    "name": "masking-website",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Masking Technology",
+    "license": "MIT",
+    "scripts": {
+        "build": "npm-run-all clean copy minify",
+        "clean": "rimraf dist",
+        "copy": "cpx -u 'src/**/*.{svg,png,txt}' dist",
+        "minify": "npm-run-all minify-html minify-css minify-js",
+        "minify-html": "minify src/index.html > dist/index.html",
+        "minify-css": "minify src/css/*.css src/css/**/*.css src/fonts/**/*.css > dist/site.css",
+        "minify-js": "minify src/site.js > dist/site.js"
+    },
+    "devDependencies": {
+        "cpx2": "^4.2.3",
+        "minify": "^9.2.0",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^5.0.0"
+    }
+}

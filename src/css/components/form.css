@@ -1,0 +1,48 @@
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+form label
+{
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea
+{
+    background-color: var(--swatch-color-gray-3);
+    border: 0;
+    border-radius: 0.5em;
+    color: var(--swatch-color-gray-5);
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form textarea
+{
+    resize: vertical;
+}
+
+form submit-button
+{
+    background-color: var(--swatch-color-brown);
+    border-radius: 2em;
+    color: var(--swatch-color-white);
+    cursor: pointer;
+    display: inline-block;
+    width: 6em;
+    font-size: 1.1em;
+    padding: 0.5em;
+    text-align: center;
+    transition: var(--transition-hover-animation);
+}
+
+form submit-button:hover
+{
+    filter: brightness(130%);
+}

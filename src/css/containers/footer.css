@@ -1,0 +1,27 @@
+
+footer
+{
+    align-items: stretch;
+    border-top: 1px solid var(--swatch-color-gray-4);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100px;
+    padding-top: 2em;
+    margin-top: 5em;
+}
+
+footer .copyright
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 0.9em;
+}
+
+footer .socials
+{
+    align-items: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

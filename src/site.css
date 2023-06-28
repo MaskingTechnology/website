@@ -1,0 +1,17 @@
+@import url('css/vars.css');
+@import url('css/layout.css');
+
+@import url('css/components/logo.css');
+@import url('css/components/socials.css');
+@import url('css/components/form.css');
+
+@import url('css/components/introduction.css');
+@import url('css/components/activities.css');
+@import url('css/components/contact.css');
+
+@import url('css/containers/body.css');
+@import url('css/containers/header.css');
+@import url('css/containers/main.css');
+@import url('css/containers/footer.css');
+
+@import url('fonts/comfortaa/font.css');

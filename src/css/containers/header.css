@@ -1,0 +1,22 @@
+
+header
+{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100px;
+}
+
+header .logo
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header .socials
+{
+    flex-grow: 0;
+    flex-shrink: 0;
+}

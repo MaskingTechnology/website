@@ -1,0 +1,88 @@
+
+#introduction
+{
+    background-image: url('../../images/abstract-blocks.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    /* Background is responsive */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding-top: 5em;
+}
+
+#introduction h1
+{
+    font-size: 2.5em;
+    font-weight: var(--font-weight-normal);
+}
+
+#introduction h2
+{
+    font-size: 1.5em;
+    font-weight: var(--font-weight-light);
+}
+
+@media (min-width: 1020px)
+{
+    #introduction
+    {
+        background-size: auto auto;
+    }
+
+    #introduction h1,
+    #introduction h2
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1020px)
+{
+    #introduction
+    {
+        background-size: auto auto;
+    }
+
+    #introduction h1,
+    #introduction h2
+    {
+        width: 70%;
+    }
+
+    #introduction h1
+    {
+        font-size: 3.8vw;
+    }
+
+    #introduction h2
+    {
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 795px)
+{
+    #introduction
+    {
+        background-image: none;
+        padding: 5vw;
+        text-align: center;
+    }
+
+    #introduction h1,
+    #introduction h2
+    {
+        width: 100%;
+    }
+
+    #introduction h1
+    {
+        font-size: 9vw;
+    }
+
+    #introduction h2
+    {
+        font-size: 5vw;
+    }
+}

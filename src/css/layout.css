@@ -1,0 +1,43 @@
+
+html
+{
+    width: 100%;
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+div.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Width is responsive */
+}
+
+@media (min-width: 1020px)
+{
+    div.container
+    {
+        /* Fixed with container so it can be centered on the page */
+        width: 1020px;
+    }
+
+    header, main, footer
+    {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1020px)
+{
+    div.container
+    {
+        /* Container must use all space from here */
+        width: 100%;
+    }
+
+    header, main, footer
+    {
+        padding: 0 3vw;
+    }
+}

@@ -1,0 +1,34 @@
+
+body
+{
+    /* Align items is responsive */
+    background-color: var(--swatch-color-gray-5);
+    color: var(--swatch-color-white);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-light);
+    font-size: 16px;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+@media (min-width: 960px)
+{
+    body
+    {
+        /* Center the container on the page with a fixed with */
+        align-items: center;
+    }
+}
+
+@media (max-width: 960px)
+{
+    body
+    {
+        /* We don't have enough space to center the container, so start left from here */
+        align-items: flex-start;
+    }
+}
