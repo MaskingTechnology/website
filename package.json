@@ -7,7 +7,7 @@
     "scripts": {
         "build": "npm-run-all clean copy minify",
         "clean": "rimraf dist",
-        "copy": "cpx -u 'src/**/*.{svg,png,txt}' dist",
+        "copy": "cpx -u 'src/**/*.{svg,png,jpg,html,php,txt}' dist",
         "minify": "npm-run-all minify-html minify-css minify-js",
         "minify-html": "minify src/index.html > dist/index.html",
         "minify-css": "minify src/css/*.css src/css/**/*.css src/fonts/**/*.css > dist/site.css",

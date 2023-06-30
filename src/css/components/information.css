@@ -1,24 +1,29 @@
 
-#contact
+#information
 {
     display: flex;
     flex-direction: row;
 }
 
-#contact h1
+#information h1
 {
     color: var(--swatch-color-orange);
     font-size: 1.5em;
 
 }
 
-#contact .form
+#information .about
 {
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
-#contact hr
+#information .about p
+{
+    margin-top: 1.5em;
+}
+
+#information hr
 {
     border: 4px solid var(--swatch-color-gray-4);
     border-radius: 1em;
@@ -26,12 +31,18 @@
     flex-shrink: 0;
 }
 
-#contact p
+#information .contact
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#information p
 {
     font-size: 1.1em;
 }
 
-#contact .options
+#information .options
 {
     flex-grow: 0;
     flex-shrink: 0;
@@ -39,7 +50,7 @@
     margin: 2.5em 1em;
 }
 
-#contact .options .option
+#information .options .option
 {
     align-items: flex-start;
     display: flex;
@@ -48,12 +59,12 @@
     margin-bottom: 0.5em;
 }
 
-#contact .options .option img
+#information .options .option img
 {
     height: 1.8em;
 }
 
-#contact .options .option a
+#information .options .option a
 {
     border-bottom: 1px solid transparent;
     color: var(--swatch-color-white);
@@ -63,34 +74,58 @@
     transition: var(--transition-hover-animation);
 }
 
-#contact .options .option a:hover
+#information .options .option a:hover
 {
     border-bottom: 1px solid var(--swatch-color-orange);
 }
 
 @media (min-width: 930px)
 {
-    
+    #information
+    {
+        gap: 3em;
+    }
+
+    #information .contact
+    {
+        width: 50%;
+    }
+
+    #information .about
+    {
+        width: 50%;
+    }
 }
 
 @media (max-width: 930px)
 {
-    #contact
+    #information
     {
         flex-direction: column;
+        gap: 2em;
         margin: 0 5%;
     }
 
-    #contact hr
+    #information .contact
+    {
+        width: auto;
+    }
+
+    #information hr
     {
         width: 100%;
         margin: 2em 0;
+    }
+
+    #information .about
+    {
+        width: auto;
     }
 }
 
 @media (max-width: 795px)
 {
-    #contact
+    #information
     {
         flex-direction: column;
         margin: 0 5%;

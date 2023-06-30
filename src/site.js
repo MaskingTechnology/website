@@ -1,21 +1,8 @@
 
 function initialize()
 {
-    initForm();
     initEmail();
     initPhone();
-}
-
-function initForm()
-{
-    const form = document.querySelector("#contact form");
-    const button = document.querySelector("#contact submit-button");
-
-    button.onclick = () =>
-    {
-        form.channel.value = 'indirect';
-        form.requestSubmit();
-    }
 }
 
 function initEmail()
