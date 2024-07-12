@@ -4,86 +4,49 @@
 
     <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Language" content="en" />
-        <meta name="description" content="We develop tools and methods for future-proofing applications and share everything we do." />
-        <meta name="author" content="Masking Technology" />
-        <meta name="copyright" content="2024 Masking Technology" />
-        <meta name="application-name" content="Masking Technology Website" />
-        <meta name="format-detection" content="telephone=no">
-
-        <meta property="og:site_name" content="Masking Technology">
-        <meta property="og:title" content="Future-proofing software applications.">
-        <meta property="og:description" content="We develop tools and methods for future-proofing applications and share everything we do.">
-        <meta property="og:image" content="https://masking.tech/images/logo_shared.png">
-        <meta property="og:url" content="https://masking.tech">
-        <meta name="twitter:card" content="summary_large_image">
+        {% include "meta.html" %}
 
         <title>Masking Technology - Future-proofing software applications</title>
 
-        <link rel="icon" type="image/png" href="images/icon.png" />
-        <link rel="stylesheet" href="site.css">
-
-        <script src="site.js"></script>
-
     </head>
-
+    
     <body>
 
         <div class="container">
 
-            <header>
-                <div class="logo">
-                    <a href="/">
-                        <img src="images/logo.svg" alt="Masking Technology" />
-                    </a>
-                </div>
-                <div class="socials">
-                    <a href="https://x.com/maskingtech" target="_blank" aria-label="Visit our X page">
-                        <img src="images/x.png" alt="X" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/maskingtechnology" target="_blank" aria-label="Visit our LinkedIn page">
-                        <img src="images/linkedin.png" alt="LinkedIn" />
-                    </a>
-                </div>
-            </header>
+            {% include "header.html" %}
 
             <main>
 
-                <section id="introduction">
-                    <h1>We specialize in building<br><span class="highlight">cost-efficient</span> applications.</h1>
-                    <h2>Everything we do is shared through open-source, articles and talks.</h2>
-                </section>
+                {% include "introduction.html" %}
 
-                <section id="activities">
+                <section id="activities" class="tiles small">
 
-                    <article class="github">
+                    <article class="project">
                         <div class="subject">
-                            <img src="images/github.svg" alt="GitHub" />
+                            <img src="/images/github.svg" alt="GitHub" />
                             <h1>Open Source Projects</h1>
                         </div>
-                        <p>All our tools and libraries can be found on Github.</p>
-                        <a href="https://github.com/MaskingTechnology" target="_blank"aria-label="Visit our GitHub page">Go to Github</a>
+                        <p>We publish our tools and libraries as open source.</p>
+                        <a href="/projects" class="button" aria-label="Visit our projects page">Go to projects</a>
                     </article>
 
-                    <article class="medium">
+                    <article class="article">
                         <div class="subject">
-                            <img src="images/medium.svg" alt="GitHub" />
+                            <img src="/images/medium.svg" alt="Medium" />
                             <h1>Published Articles</h1>
                         </div>
-                        <p>We share our knowledge and thoughts on Medium.</p>
-                        <a href="https://medium.com/@peter_masking" target="_blank" aria-label="Visit our Medium page">Go to Medium</a>
+                        <p>We write about the things we do.</p>
+                        <a href="/articles" class="button" aria-label="Visit our articles page">Go to articles</a>
                     </article>
 
-                    <article class="sessionize">
+                    <article class="talk">
                         <div class="subject">
-                            <img src="images/sessionize.svg" alt="GitHub" />
+                            <img src="/images/sessionize.svg" alt="Sessionize" />
                             <h1>Scheduled Talks</h1>
                         </div>
-                        <p>Our talks can be found on Sessionize.</p>
-                        <a href="https://sessionize.com/peter-van-vliet/" target="_blank" aria-label="Visit our Sessionize page">Go to Sessionize</a>
+                        <p>We speak about our knowledge and thoughts.</p>
+                        <a href="/talks" class="button" aria-label="Visit our talks page">Go to talks</a>
                     </article>
 
                 </section>
@@ -129,24 +92,7 @@
 
             </main>
 
-            <footer>
-                <div class="copyright">
-                    <div class="logo">
-                        <a href="/">
-                            <img src="images/logo.svg" alt="Masking Technology" />
-                        </a>
-                    </div>
-                    <p>&copy; 2024 Masking Technology B.V.</p>
-                </div>
-                <div class="socials">
-                    <a href="https://x.com/maskingtech" target="_blank" aria-label="Visit our X page">
-                        <img src="images/x.png" alt="X" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/maskingtechnology" target="_blank" aria-label="Visit our LinkedIn page">
-                        <img src="images/linkedin.png" alt="LinkedIn" />
-                    </a>
-                </div>
-            </footer>
+            {% include "footer.html" %}
 
         </div>
 

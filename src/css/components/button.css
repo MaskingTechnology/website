@@ -1,0 +1,25 @@
+
+.button
+{
+    border-radius: 2em;
+    color: var(--swatch-color-white);
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    transition: var(--transition-hover-animation);
+}
+
+.project .button
+{
+    background-color: var(--swatch-color-brown);
+}
+
+.article .button
+{
+    background-color: var(--swatch-color-blue);
+}
+
+.talk .button
+{
+    background-color: var(--swatch-color-green);
+}

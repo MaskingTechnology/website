@@ -1,5 +1,5 @@
 
-#activities
+.tiles
 {
     justify-content: center;
     display: flex;
@@ -8,17 +8,26 @@
     gap: 30px;
 }
 
-#activities article
+.tiles article
 {
     background-color: var(--swatch-color-gray-4);
     border-radius: 1.2em;
     flex-grow: 0;
     flex-shrink: 0;
     padding: 25px;
+}
+
+.tiles.small article
+{
     width: 250px;
 }
 
-#activities article .subject
+.tiles.large article
+{
+    width: 410px;
+}
+
+.tiles article .subject
 {
     align-items: center;
     display: flex;
@@ -26,57 +35,32 @@
     gap: 1.5em;
 }
 
-#activities article .subject img
+.tiles article .subject img
 {
     height: 3.8em;
 }
 
-#activities article .subject h1
+.tiles article .subject h1
 {
     font-size: 1.4em;
     font-weight: var(--font-weight-medium);
 }
 
-#activities article p
+.tiles article p
 {
     font-size: 1.1em;
     font-weight: var(--font-weight-light);
     margin: 2em 0;
 }
 
-#activities article a
-{
-    border-radius: 2em;
-    color: var(--swatch-color-white);
-    display: inline-block;
-    padding: 0.8em 1.5em;
-    text-decoration: none;
-    transition: var(--transition-hover-animation);
-}
-
-#activities article a:hover
+.tiles article a:hover
 {
     filter: brightness(130%);
 }
 
-#activities article.github a
-{
-    background-color: var(--swatch-color-brown);
-}
-
-#activities article.medium a
-{
-    background-color: var(--swatch-color-blue);
-}
-
-#activities article.sessionize a
-{
-    background-color: var(--swatch-color-green);
-}
-
 @media (min-width: 1020px)
 {
-    #activities article
+    .tiles article
     {
         border-radius: 1.2em;
         padding: 25px;
@@ -86,7 +70,8 @@
 
 @media (max-width: 1020px)
 {
-    #activities article
+    .tiles article,
+    .tiles article.talk
     {
         border-radius: 1.2em;
         padding: 25px;
@@ -96,7 +81,8 @@
 
 @media (max-width: 795px)
 {
-    #activities article
+    .tiles article,
+    .tiles article.talk
     {
         border-radius: 1.2em;
         padding: 25px;

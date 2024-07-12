@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        
+    {% include "meta.html" %}
+
+    <title>Masking Technology - Future-proofing software applications</title>
+
+</head>
+
+    <body>
+
+        <div class="container">
+
+            {% include "header.html" %}
+
+            <main>
+
+                <section id="introduction">
+                    <h1>We take immense pride in the <span class="highlight">projects</span> we build.</h1>
+                    <h2>All our projects are published as open source, reflecting our commitment to transparency and community collaboration.</h2>
+                </section>
+
+                <section class="tiles large">
+
+                    <article class="project">
+                        <div class="subject">
+                            <img src="/images/github.svg" alt="GitHub" />
+                            <h1>Jitar</h1>
+                        </div>
+                        <p>Jitar is a distributed runtime for scaling monolithic full-stack JavaScript and TypeScript applications.</p>
+                        <p>Its goal is to create adaptable applications that can evolve from monolithic to microservices seamlessly, with configuration changes only.</p>
+                        <a href="https://github.com/MaskingTechnology/jitar" class="button" target="_blank" aria-label="Visit our Jitar page">Go to Jitar</a>
+                    </article>
+
+                    <article class="project">
+                        <div class="subject">
+                            <img src="/images/github.svg" alt="GitHub" />
+                            <h1>Comify</h1>
+                        </div>
+                        <p>Comify is a social media platform that uses comics as the primary form of communication.</p>
+                        <p>Its intent is to learn and improve building future-proofed applications and serves as a demo project for Jitar.</p>
+                        <a href="https://github.com/MaskingTechnology/comify" class="button" target="_blank" aria-label="Visit our Comify page">Go to Comify</a>
+                    </article>
+                    
+            </section>
+
+            </main>
+
+            {% include "footer.html" %}
+
+        </div>
+
+    </body>
+
+</html>

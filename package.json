@@ -5,8 +5,9 @@
     "author": "Masking Technology",
     "license": "MIT",
     "scripts": {
-        "build": "npm-run-all clean copy minify",
+        "build:old": "npm-run-all clean copy minify",
         "clean": "rimraf dist",
+        "build": "npx @11ty/eleventy",
         "copy": "cpx -u 'src/**/*.{svg,png,jpg,html,php,txt}' dist",
         "minify": "npm-run-all minify-html minify-css minify-js",
         "minify-html": "minify src/index.html > dist/index.html",
@@ -18,5 +19,8 @@
         "minify": "^9.2.0",
         "npm-run-all": "^4.1.5",
         "rimraf": "^5.0.0"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1"
     }
 }
