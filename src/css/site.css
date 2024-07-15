@@ -1,18 +1,18 @@
-@import url('vars.css');
-@import url('layout.css');
+@import url('site/vars.css');
+@import url('site/layout.css');
 
-@import url('components/button.css');
-@import url('components/logo.css');
-@import url('components/socials.css');
-@import url('components/form.css');
-@import url('components/tiles.css');
+@import url('site/components/button.css');
+@import url('site/components/logo.css');
+@import url('site/components/socials.css');
+@import url('site/components/form.css');
+@import url('site/components/tiles.css');
 
-@import url('components/introduction.css');
-@import url('components/information.css');
+@import url('site/components/introduction.css');
+@import url('site/components/information.css');
 
-@import url('containers/body.css');
-@import url('containers/header.css');
-@import url('containers/main.css');
-@import url('containers/footer.css');
+@import url('site/containers/body.css');
+@import url('site/containers/header.css');
+@import url('site/containers/main.css');
+@import url('site/containers/footer.css');
 
 @import url('fonts/comfortaa/font.css');

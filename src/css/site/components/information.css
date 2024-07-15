@@ -9,6 +9,7 @@
 {
     color: var(--swatch-color-orange);
     font-size: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 #information .about
@@ -19,7 +20,7 @@
 
 #information .about p
 {
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 #information hr

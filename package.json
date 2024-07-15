@@ -5,22 +5,26 @@
     "author": "Masking Technology",
     "license": "MIT",
     "scripts": {
-        "build:old": "npm-run-all clean copy minify",
-        "clean": "rimraf dist",
-        "build": "npx @11ty/eleventy",
-        "copy": "cpx -u 'src/**/*.{svg,png,jpg,html,php,txt}' dist",
+        "build": "npm-run-all clean compose finalize",
+        "clean": "rimraf build dist",
+        "compose": "npx @11ty/eleventy",
+        "finalize": "npm-run-all copy create minify",
+        "copy": "cpx -u 'build/**/*.{svg,png,jpg,html,php,txt}' dist",
+        "create": "mkdir -p dist/css dist/js",
         "minify": "npm-run-all minify-html minify-css minify-js",
-        "minify-html": "minify src/index.html > dist/index.html",
-        "minify-css": "minify src/css/*.css src/css/**/*.css src/fonts/**/*.css > dist/site.css",
-        "minify-js": "minify src/site.js > dist/site.js"
+        "minify-html": "npm-run-all minify-index minify-projects minify-articles minify-talks",
+        "minify-index": "minify build/index.html > dist/index.html",
+        "minify-projects": "minify build/projects/index.html > dist/projects/index.html",
+        "minify-articles": "minify build/articles/index.html > dist/articles/index.html",
+        "minify-talks": "minify build/talks/index.html > dist/talks/index.html",
+        "minify-css": "minify build/css/site/*.css build/css/site/**/*.css build/fonts/**/*.css > dist/css/site.css",
+        "minify-js": "minify build/js/site.js > dist/js/site.js"
     },
     "devDependencies": {
+        "@11ty/eleventy": "^2.0.1",
         "cpx2": "^4.2.3",
         "minify": "^9.2.0",
         "npm-run-all": "^4.1.5",
         "rimraf": "^5.0.0"
-    },
-    "dependencies": {
-        "@11ty/eleventy": "^2.0.1"
     }
 }

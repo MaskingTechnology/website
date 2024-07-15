@@ -18,35 +18,38 @@
 
             <main>
 
-                {% include "introduction.html" %}
+                <section id="introduction">
+                    <h1>We make your software development <span class="highlight">cost-efficient</span>.</h1>
+                    <h2>By future-proofing the development life cycle and technology.</h2>
+                </section>
 
                 <section id="activities" class="tiles small">
 
-                    <article class="project">
-                        <div class="subject">
-                            <img src="/images/github.svg" alt="GitHub" />
-                            <h1>Open Source Projects</h1>
-                        </div>
-                        <p>We publish our tools and libraries as open source.</p>
-                        <a href="/projects" class="button" aria-label="Visit our projects page">Go to projects</a>
-                    </article>
-
-                    <article class="article">
+                    <article>
                         <div class="subject">
                             <img src="/images/medium.svg" alt="Medium" />
                             <h1>Published Articles</h1>
                         </div>
-                        <p>We write about the things we do.</p>
-                        <a href="/articles" class="button" aria-label="Visit our articles page">Go to articles</a>
+                        <p>We write about all the things we do.</p>
+                        <a href="/articles" class="button article" aria-label="View our articles">View articles</a>
                     </article>
 
-                    <article class="talk">
+                    <article>
                         <div class="subject">
                             <img src="/images/sessionize.svg" alt="Sessionize" />
-                            <h1>Scheduled Talks</h1>
+                            <h1>Conference Talks</h1>
                         </div>
-                        <p>We speak about our knowledge and thoughts.</p>
-                        <a href="/talks" class="button" aria-label="Visit our talks page">Go to talks</a>
+                        <p>We speak on our subject of expertise.</p>
+                        <a href="/talks" class="button talk" aria-label="View our talks">View talks</a>
+                    </article>
+                    
+                    <article>
+                        <div class="subject">
+                            <img src="/images/github.svg" alt="GitHub" />
+                            <h1>Open Source Projects</h1>
+                        </div>
+                        <p>We publish open source tools and libraries.</p>
+                        <a href="/projects" class="button project" aria-label="View our projects">View projects</a>
                     </article>
 
                 </section>
@@ -55,15 +58,19 @@
                 
                     <div class="about">
                         <h1>How can we help?</h1>
-                        <p>We excel in transforming your software application development process to achieve optimal efficiency and cost savings.</p>
-                        <p>Our expert team collaborates closely with you to analyze, refine, and enhance each phase of your development cycle.</p>
-                        <p>By leveraging our deep industry knowledge and innovative methodologies, we ensure your applications are built to meet your needs while maximizing value and minimizing costs.</p>
+                        <p>We excel in transforming your software development life cycle to achieve optimal efficiency and cost savings.</p>
+                        <p>Over the past years, we have gained deep industry knowledge and developed innovative methodologies, forming a strong foundation for our services.</p>
+                        <p>Our experts are ready to collaborate closely to analyze, refine, and enhance each phase of your development cycle.</p>
+                        <p><a href="/services" class="button service" aria-label="View our services">View services</a></p>
                     </div>
 
                     <hr>
 
                     <div class="contact">
                         <h1>Contact information</h1>
+                        <p>
+                            Don't be a stranger, and contact us for any inquiries or questions. We are here to help you.
+                        </p>
                         <div class="options">
                             <div class="option location">
                                 <img src="images/location.svg" alt="Location" />
@@ -75,11 +82,11 @@
                             </div>
                             <div class="option phone">
                                 <img src="images/phone.svg" alt="Phone" />
-                                <span class="docall">31-0-85-07-03-71-8</span>
+                                <a href="31-0-85-07-03-71-8" class="docall">31-0-85-07-03-71-8</a>
                             </div>
                             <div class="option email">
                                 <img src="images/email.svg" alt="Email" />
-                                <span class="domail">info-monkeywithtail-masking.tech</span>
+                                <a href="info-monkeywithtail-masking.tech" class="domail">info-monkeywithtail-masking.tech</a>
                             </div>
                         </div>
                         <p>

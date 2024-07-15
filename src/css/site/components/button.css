@@ -9,17 +9,22 @@
     transition: var(--transition-hover-animation);
 }
 
-.project .button
+.button.project 
 {
     background-color: var(--swatch-color-brown);
 }
 
-.article .button
+.button.article
 {
     background-color: var(--swatch-color-blue);
 }
 
-.talk .button
+.button.talk
 {
     background-color: var(--swatch-color-green);
+}
+
+.button.service
+{
+    background-color: var(--swatch-color-purple);
 }
