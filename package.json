@@ -9,7 +9,7 @@
         "clean": "rimraf build dist",
         "compose": "npx @11ty/eleventy",
         "finalize": "npm run copy && npm run create && npm run minify",
-        "copy": "cpx -u 'build/**/*.{svg,png,jpg,html,php,txt}' dist",
+        "copy": "cpx -u 'build/**/*.{svg,png,jpg,html,php,txt,pdf}' dist",
         "create": "mkdir -p dist/css dist/js",
         "minify": "npm run minify-html && npm run minify-css && npm run minify-js",
         "minify-html": "npm run minify-index && npm run minify-projects && npm run minify-articles && npm run minify-talks",
