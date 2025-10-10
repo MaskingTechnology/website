@@ -5,14 +5,14 @@
     "author": "Masking Technology",
     "license": "MIT",
     "scripts": {
-        "build": "npm-run-all clean compose finalize",
+        "build": "npm run clean && npm run compose && npm run finalize",
         "clean": "rimraf build dist",
         "compose": "npx @11ty/eleventy",
-        "finalize": "npm-run-all copy create minify",
+        "finalize": "npm run copy && npm run create && npm run minify",
         "copy": "cpx -u 'build/**/*.{svg,png,jpg,html,php,txt}' dist",
         "create": "mkdir -p dist/css dist/js",
-        "minify": "npm-run-all minify-html minify-css minify-js",
-        "minify-html": "npm-run-all minify-index minify-projects minify-articles minify-talks",
+        "minify": "npm run minify-html && npm run minify-css && npm run minify-js",
+        "minify-html": "npm run minify-index && npm run minify-projects && npm run minify-articles && npm run minify-talks",
         "minify-index": "minify build/index.html > dist/index.html",
         "minify-projects": "minify build/projects/index.html > dist/projects/index.html",
         "minify-articles": "minify build/articles/index.html > dist/articles/index.html",
@@ -21,10 +21,9 @@
         "minify-js": "minify build/js/site.js > dist/js/site.js"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.1",
-        "cpx2": "^4.2.3",
-        "minify": "^9.2.0",
-        "npm-run-all": "^4.1.5",
-        "rimraf": "^5.0.0"
+        "@11ty/eleventy": "^3.1.2",
+        "cpx2": "^8.0.0",
+        "minify": "^14.1.0",
+        "rimraf": "^6.0.1"
     }
 }
