@@ -22,8 +22,17 @@
     },
     "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
-        "cpx2": "^8.0.0",
-        "minify": "^14.1.0",
+        "cpx2": "^9.0.0",
+        "minify": "^15.3.1",
         "rimraf": "^6.1.2"
+    },
+    "engines": {
+        "node": ">= 22.9.0"
+    },
+    "packageManager": "npm@11.16.0",
+    "allowScripts": {
+        "fsevents@2.3.3": true,
+        "esbuild@0.28.0": true,
+        "@swc/core@1.15.40": true
     }
 }
