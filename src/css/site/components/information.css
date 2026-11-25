@@ -1,133 +1,86 @@
-
 #information
 {
-    display: flex;
-    flex-direction: row;
+    align-items: start;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr auto 1fr;
 }
 
 #information h1
 {
-    color: var(--swatch-color-orange);
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
+    color: var(--color-accent);
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: var(--font-weight-semi-bold);
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
 }
 
-#information .about
+#information .about p,
+#information .contact > p
 {
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-#information .about p
-{
-    margin-bottom: 1.5em;
+    color: #c3cad6;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    margin-bottom: 1.25em;
 }
 
 #information hr
 {
-    border: 4px solid var(--swatch-color-gray-4);
-    border-radius: 1em;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
-#information .contact
-{
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-#information p
-{
-    font-size: 1.1em;
+    align-self: stretch;
+    background: linear-gradient(180deg, transparent, var(--color-border-strong), transparent);
+    border: none;
+    width: 1px;
 }
 
 #information .options
 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    font-size: 1.1em;
-    margin: 2.5em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin: 1.75em 0;
 }
 
-#information .options .option
+#information .option
 {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    gap: 0.5em;
-    margin-bottom: 0.5em;
+    gap: 0.7rem;
 }
 
-#information .options .option img
+#information .option img
 {
-    height: 1.8em;
+    height: 1.5em;
+    margin-top: 0.15em;
 }
 
-#information .options .option a
+#information .option a
 {
-    border-bottom: 1px solid transparent;
-    color: var(--swatch-color-white);
+    color: var(--color-text);
     display: inline-block;
-    padding-top: 0.3em;
+    line-height: 1.55;
     text-decoration: none;
-    transition: var(--transition-hover-animation);
+    transition: var(--transition-fast);
 }
 
-#information .options .option a:hover
+#information .option a:hover
 {
-    border-bottom: 1px solid var(--swatch-color-orange);
-}
-
-@media (min-width: 930px)
-{
-    #information
-    {
-        gap: 3em;
-    }
-
-    #information .contact
-    {
-        width: 50%;
-    }
-
-    #information .about
-    {
-        width: 50%;
-    }
+    color: var(--color-accent);
 }
 
 @media (max-width: 930px)
 {
     #information
     {
-        flex-direction: column;
-        gap: 2em;
-        margin: 0 5%;
-    }
-
-    #information .contact
-    {
-        width: auto;
+        gap: 1.75rem;
+        grid-template-columns: 1fr;
     }
 
     #information hr
     {
-        width: 100%;
-        margin: 2em 0;
-    }
-
-    #information .about
-    {
+        background: linear-gradient(90deg, transparent, var(--color-border-strong), transparent);
+        height: 1px;
         width: auto;
-    }
-}
-
-@media (max-width: 795px)
-{
-    #information
-    {
-        flex-direction: column;
-        margin: 0 5%;
     }
 }

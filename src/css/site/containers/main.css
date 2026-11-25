@@ -1,8 +1,8 @@
-
 main
 {
     display: flex;
     flex-direction: column;
+    gap: clamp(3rem, 6vw, 5.5rem);
 }
 
 h1, h2, h3, p
@@ -11,23 +11,16 @@ h1, h2, h3, p
     padding: 0;
 }
 
-.highlight
+/* Scroll reveal (only when JS is active and motion is allowed) */
+html.js .reveal
 {
-    color: var(--swatch-color-orange);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s ease, transform .6s cubic-bezier(.22, 1, .36, 1);
 }
 
-@media (min-width: 795px)
+html.js .reveal.is-visible
 {
-    main
-    {
-        gap: 8em;
-    }
-}
-
-@media (max-width: 795px)
-{
-    main
-    {
-        gap: 4em;
-    }
+    opacity: 1;
+    transform: none;
 }

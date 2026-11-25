@@ -1,4 +1,3 @@
-
 form
 {
     display: flex;
@@ -8,19 +7,32 @@ form
 
 form label
 {
-    font-size: 1.1em;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
     margin-bottom: 0.5em;
 }
 
 form input, form textarea
 {
-    background-color: var(--swatch-color-gray-3);
-    border: 0;
-    border-radius: 0.5em;
-    color: var(--swatch-color-gray-5);
-    font-size: 1.1em;
-    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 1rem;
     margin-bottom: 1em;
+    padding: 0.7em 0.9em;
+}
+
+form input::placeholder, form textarea::placeholder
+{
+    color: var(--color-faint);
+}
+
+form input:focus, form textarea:focus
+{
+    border-color: rgba(251, 146, 60, 0.5);
+    outline: none;
 }
 
 form textarea
@@ -30,19 +42,22 @@ form textarea
 
 form submit-button
 {
-    background-color: var(--swatch-color-brown);
-    border-radius: 2em;
-    color: var(--swatch-color-white);
+    background-color: var(--color-accent-strong);
+    border: none;
+    border-radius: var(--radius-pill);
+    color: #fff;
     cursor: pointer;
     display: inline-block;
-    width: 6em;
-    font-size: 1.1em;
-    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semi-bold);
+    padding: 0.7em 1.6em;
     text-align: center;
-    transition: var(--transition-hover-animation);
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
 
 form submit-button:hover
 {
-    filter: brightness(130%);
+    filter: brightness(1.12);
+    box-shadow: 0 10px 28px -8px rgba(249, 115, 22, 0.45);
+    transform: translateY(-2px);
 }

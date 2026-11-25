@@ -1,88 +1,63 @@
-
 #introduction
 {
-    background-image: url('../../images/abstract-blocks.svg');
-    background-position: right top;
-    background-repeat: no-repeat;
-    /* Background is responsive */
-    display: flex;
-    flex-direction: column;
-    gap: 1.2em;
-    padding-top: 5em;
+    padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem;
+    position: relative;
+}
+
+/* Warm radial glow in the top right */
+#introduction::before
+{
+    background: radial-gradient(ellipse 60% 70% at 78% 18%, rgba(249, 115, 22, 0.20), transparent 65%);
+    content: "";
+    inset: -12% -6% 0 -6%;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* Faint grid pattern fading out towards the bottom */
+#introduction::after
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    content: "";
+    inset: -12% -6% 0 -6%;
+    mask-image: radial-gradient(ellipse 75% 65% at 72% 15%, black 25%, transparent 78%);
+    -webkit-mask-image: radial-gradient(ellipse 75% 65% at 72% 15%, black 25%, transparent 78%);
+    pointer-events: none;
+    position: absolute;
+}
+
+#introduction > *
+{
+    position: relative;
+    z-index: 1;
 }
 
 #introduction h1
 {
-    font-size: 2.5em;
-    font-weight: var(--font-weight-normal);
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 5.4vw, 3.7rem);
+    font-weight: var(--font-weight-semi-bold);
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+    max-width: 16ch;
 }
 
 #introduction h2
 {
-    font-size: 1.5em;
-    font-weight: var(--font-weight-light);
+    color: var(--color-muted);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.55;
+    margin-top: 1.4rem;
+    max-width: 36ch;
 }
 
-@media (min-width: 1020px)
+#introduction .highlight
 {
-    #introduction
-    {
-        background-size: auto auto;
-    }
-
-    #introduction h1,
-    #introduction h2
-    {
-        width: 70%;
-    }
-}
-
-@media (max-width: 1020px)
-{
-    #introduction
-    {
-        background-size: auto auto;
-    }
-
-    #introduction h1,
-    #introduction h2
-    {
-        width: 70%;
-    }
-
-    #introduction h1
-    {
-        font-size: 3.8vw;
-    }
-
-    #introduction h2
-    {
-        font-size: 2.3vw;
-    }
-}
-
-@media (max-width: 795px)
-{
-    #introduction
-    {
-        background-image: none;
-        padding: 5vw;
-        text-align: center;
-    }
-
-    #introduction h1,
-    #introduction h2
-    {
-        width: 100%;
-    }
-
-    #introduction h1
-    {
-        font-size: 9vw;
-    }
-
-    #introduction h2
-    {
-        font-size: 5vw;
-    }
+    background: linear-gradient(115deg, #fdba74 0%, #fb923c 45%, #f97316 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

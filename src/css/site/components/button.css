@@ -1,30 +1,23 @@
-
 .button
 {
-    border-radius: 2em;
-    color: var(--swatch-color-white);
+    border-radius: var(--radius-pill);
+    color: #fff;
     display: inline-block;
-    padding: 0.8em 1.5em;
+    font-weight: var(--font-weight-semi-bold);
+    letter-spacing: 0.01em;
+    padding: 0.75em 1.5em;
     text-decoration: none;
-    transition: var(--transition-hover-animation);
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
 
-.button.project 
+.button:hover
 {
-    background-color: var(--swatch-color-brown);
+    filter: brightness(1.14);
+    box-shadow: 0 10px 28px -8px rgba(0, 0, 0, 0.55);
+    transform: translateY(-2px);
 }
 
-.button.article
-{
-    background-color: var(--swatch-color-blue);
-}
-
-.button.talk
-{
-    background-color: var(--swatch-color-green);
-}
-
-.button.service
-{
-    background-color: var(--swatch-color-purple);
-}
+.button.project { background-color: var(--color-project); }
+.button.article { background-color: var(--color-article); }
+.button.talk    { background-color: var(--color-talk); }
+.button.service { background-color: var(--color-service); }

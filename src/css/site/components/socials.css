@@ -1,25 +1,28 @@
-
 .socials
 {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 0.35rem;
 }
 
 .socials a
 {
-    border-bottom: 1px solid transparent;
-    text-decoration: none;
-    transition: var(--transition-hover-animation);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    opacity: 0.72;
+    padding: 0.4rem;
+    transition: var(--transition-fast);
 }
 
 .socials a:hover
 {
-    border-bottom: 1px solid var(--swatch-color-orange);
+    background: rgba(255, 255, 255, 0.06);
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 .socials img
 {
-    height: 30px;
+    height: 22px;
 }

@@ -4,6 +4,7 @@
 @import url('site/components/button.css');
 @import url('site/components/logo.css');
 @import url('site/components/socials.css');
+@import url('site/components/nav.css');
 @import url('site/components/form.css');
 @import url('site/components/tiles.css');
 
@@ -14,5 +15,3 @@
 @import url('site/containers/header.css');
 @import url('site/containers/main.css');
 @import url('site/containers/footer.css');
-
-@import url('fonts/comfortaa/font.css');
